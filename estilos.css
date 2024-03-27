@@ -1,0 +1,60 @@
+body{
+   background: url(AUTOMATIZACION_PROFESIONAL.jpg); 
+   background-size:cover;
+   font-family: serif;
+}
+
+h1{
+color: aliceblue;
+font-weight: 1000;
+background: rgba(0, 0, 0, 0.2);
+border-radius:5px;
+backdrop-filter: blur(7px);
+padding: 30px;
+border: 3px solid aliceblue;
+}
+
+.mainTE{
+    color: aliceblue;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    
+}
+
+.navegador{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly ;
+    flex-wrap: wrap;
+    
+}
+.pases{
+    margin: 50px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius:5px;
+    backdrop-filter: blur(7px);
+    padding: 10px;
+    color: aliceblue;
+    border: 3px solid aliceblue;
+}
+.pases:hover{
+    color: red;
+    cursor: pointer;
+}
+.nosotros{
+    padding: 100px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius:5px;
+    backdrop-filter: blur(7px);
+    font-size: 25px;
+    border: 3px solid aliceblue;
+}
+
+.logo{
+    max-width: 90px;
+    max-height: 90px;
+}
