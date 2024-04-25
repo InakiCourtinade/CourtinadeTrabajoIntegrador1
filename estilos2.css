@@ -1,15 +1,14 @@
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
   }
   
   body {
-    background-image: url('AUTOMATIZACION_PROFESIONAL.jpg');
+    background-image: url('Fondo\ Principal.jpg');
   }
   
   .form-register {
-    width: 400px;
+    max-width: 400px;
     background: #24303c;
     padding: 30px;
     margin: auto;
@@ -19,6 +18,7 @@
     color: white;
     box-shadow: 7px 13px 37px #000;
     border: 3px solid aliceblue;
+    margin-top: 150px;
   }
   
   .form-register h4 {
@@ -77,12 +77,57 @@
 
   }
 
-  .infos{
-    margin: 50px;
-    background: rgba(0, 0, 0, 0.2);
-    border-radius:5px;
-    backdrop-filter: blur(7px);
+  header{
+    display: flex;
+    background: cornflowerblue;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px;
-    color: aliceblue;
-    border: 3px solid aliceblue;
+    min-height: 100px;
+}
+nav{
+  display: flex;
+  margin-right: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: 600;
+  font-size: 20px;
+}
+nav a{
+  font-weight: 600;
+  padding-right: 30px;
+  font-size: 20px;
+}
+
+.title{
+  display: flex;
+  align-items: center;
+  margin-left: 40px ;
+}
+
+  @media(max-width:700px){
+    header{
+      flex-direction: column;
+      padding: 20px;
+      
+    }
+    .title{
+      margin-bottom: 20px;
+    }
+    nav{
+      margin-left: 50px;
+      margin-bottom: 40px;
+    }
+    .btn{
+      padding: 10px;
+      border: 3px solid aliceblue;
+      border-radius: 5px
+    }
+    .form-register{
+      margin-top: 100px;
+      max-width: 350px;
+    }
   }
