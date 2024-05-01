@@ -1,3 +1,8 @@
+
+
+
+
+
 body{
    background: url('Fondo\ Principal.jpg');
    background-size:cover;
@@ -5,6 +10,37 @@ body{
    background-position: center;
    background-attachment: fixed;
    margin: 0;
+}
+
+footer{
+    background: cornflowerblue;
+    padding: 10px;
+}
+.footerCont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: aliceblue;
+}
+.fNosotros{
+    max-width: 300px;
+}
+
+
+.quickLinks{
+    display: flex;
+    flex-direction: column;
+}
+footer a:hover{
+    cursor: pointer;
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+}
+.cQlINK{
+    margin-right: 25px;
 }
 
 
@@ -65,7 +101,7 @@ p{
     border: 3px solid aliceblue;
 } 
 .imagen2{
-    max-width: 570px;
+    max-width: 500px;
     margin-top: 30px;
     padding: 30px;
 
@@ -77,13 +113,14 @@ p{
     padding-left: 50px;
     padding-right: 50px;
 }
-@media (max-width: 1380px) {
-    .imgCont{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+
+.imgCont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
+
+
 
 @media (max-width: 1200px) {
     .imgCont{
@@ -101,6 +138,15 @@ p{
         flex-direction: column;
         align-items: center;
     }
+    nav{
+        margin-left: 50px;
+    }
+    
+}
+@media(max-width:700px){
+   .fNosotros{
+    max-width: 200px;
+   }
 }
 
 @media(max-width:600px){
@@ -130,4 +176,23 @@ p{
     .nosotros{
         width: 350px;
     }
+}
+@media(max-width:550px){
+    .footerCont{
+        flex-direction: column;
+        align-items: center;
+    }
+    .fNosotros{
+        justify-self: center;
+        margin-left: 0;
+    }
+}
+@media(max-width:400px){
+    .nosotros{
+        max-width: 200px;
+    }
+    .imagen2{
+        max-width: 200px;
+    }
+
 }
