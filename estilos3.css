@@ -1,7 +1,12 @@
 body {
-    background-image: url('Fondo\ Principal.jpg');
-    margin: 0;
-  }
+    background: url('Fondo\ Principal.jpg');
+   background-size:cover;
+   font-family: serif;
+   background-position: center;
+   /* background-attachment: fixed; */
+   margin: 0;
+}
+  
   header{
     display: flex;
     background: cornflowerblue;
@@ -10,6 +15,40 @@ body {
     padding: 10px;
     min-height: 100px;
 }
+footer{
+    background: cornflowerblue;
+    padding: 10px;
+    position: relative;
+    margin: 0;
+}
+.footerCont{
+    display: flex;
+    flex-direction: row;
+    color: aliceblue;
+    justify-content: space-around;
+}
+.fNosotros{
+    max-width: 300px;
+}
+
+
+.quickLinks{
+    display: flex;
+    flex-direction: column;
+}
+footer a:hover{
+    cursor: pointer;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.cQlINK{
+    margin-right: 25px;
+}
+
 .btn{
     text-decoration: none;
     color: aliceblue;
@@ -38,24 +77,29 @@ h1{
 a{
     text-decoration: none;
     color: aliceblue;
-    margin-left: 40px;
-    margin-right: 40px;
-    font-weight: 600;
-    font-size: 20px;
+    
     
 }
 .container2{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+    margin-bottom: 30px;
 }
+.container2 a{
+    margin-left: 40px;
+}
+
 
 @media(max-width:800px){
     .img{
         max-width: 500px;
     }
-}
+    .fNosotros{
+        max-width: 200px;
+       }
+    }
+
 
 @media(max-width:600px){
     .img{
@@ -63,10 +107,9 @@ a{
     }
     .container2{
         flex-direction: column;
-        padding: 30px;
     }
-    div a{
-        margin-top: 10px;
+    .container2 a{
+        margin-left: 0;
     }
     header a{
         padding: 10px;
@@ -76,10 +119,36 @@ a{
     header{
         padding-bottom: 70px;
         padding-top: 10px;
+        justify-content: center;
+
     }
     .title{
         display: flex;
         justify-content: center;
         align-items: center;
+        
+    }
+    .btn{
+        margin-left: 0;
+    }
+}
+@media(max-width:550px){
+    .footerCont{
+        flex-direction: column;
+        align-items: center;
+    }
+    .fNosotros{
+        justify-self: center;
+        
+    }
+}
+@media(max-width:450px){
+    .img{
+        max-width: 200px;
+    }
+}
+@media(max-width:400px){
+    .nosotros{
+        max-width: 200px;
     }
 }
