@@ -1,5 +1,7 @@
 
-
+*{
+    font-family: serif;
+}
 
 
 
@@ -76,7 +78,7 @@ a{
 }
 nav a{
     font-weight: 600;
-    padding-right: 30px;
+    padding-left: 20px;
     font-size: 20px;
     
     
@@ -163,7 +165,8 @@ p{
         margin-top: 10px;
         justify-content: center;
         align-items: center;
-        margin-right: 30px;
+        margin-right: 0;
+        margin-left: 0;
     }
     .container1{
         padding: 30px;
@@ -174,7 +177,14 @@ p{
         
     }
     .nosotros{
-        width: 350px;
+        width: 290px;
+        
+    }
+    .nosotros p{
+        font-size: 20px;
+    }
+    .nosotros h1{
+        font-size: 25px;
     }
 }
 @media(max-width:550px){
@@ -189,7 +199,7 @@ p{
 }
 @media(max-width:400px){
     .nosotros{
-        max-width: 200px;
+        max-width: 220px;
     }
     .imagen2{
         max-width: 200px;
