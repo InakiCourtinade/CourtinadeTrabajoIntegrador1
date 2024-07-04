@@ -1,3 +1,8 @@
+*{
+    font-family: serif;
+}
+
+
 body {
     background: url('Fondo\ Principal.jpg');
    background-size:cover;
@@ -5,9 +10,10 @@ body {
    background-position: center;
    /* background-attachment: fixed; */
    margin: 0;
+}h1{
+    color: aliceblue;
 }
-  
-  header{
+header{
     display: flex;
     background: cornflowerblue;
     justify-content: space-between;
@@ -15,7 +21,47 @@ body {
     padding: 10px;
     min-height: 100px;
 }
-footer{
+.title{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    max-width: 90px;
+    max-height: 90px;
+    margin-right: 10px;
+}
+nav{
+    display: flex;
+    margin-right: 80px;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+    
+}
+nav a{
+    font-weight: 600;
+    padding-left: 20px;
+    font-size: 20px;
+    
+    
+
+}
+a:hover{
+    color: red;
+    cursor: pointer;
+}
+  
+  /* header{
+    display: flex;
+    background: cornflowerblue;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    min-height: 100px;
+} */
+/* footer{
     background: cornflowerblue;
     padding: 10px;
     position: relative;
@@ -47,6 +93,40 @@ footer a:hover{
 }
 .cQlINK{
     margin-right: 25px;
+} */
+footer{
+    background: cornflowerblue;
+    padding: 10px;
+    min-height: 200px;
+}
+.footerCont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+    color: aliceblue;
+}
+.fNosotros{
+    max-width: 300px;
+}
+footer h2{
+  margin-bottom: 10px;
+}
+
+
+.quickLinks{
+    display: flex;
+    flex-direction: column;
+}
+footer a:hover{
+    cursor: pointer;
+}
+.links{
+  display: flex;
+  flex-direction: row;
+}
+.cQlINK{
+  margin-right: 25px;
 }
 
 .btn{
@@ -99,6 +179,9 @@ a{
         max-width: 200px;
        }
     }
+    nav{
+        margin-left: 50px;
+    }
 
 
 @media(max-width:600px){
@@ -111,7 +194,7 @@ a{
     .container2 a{
         margin-left: 0;
     }
-    header a{
+    /* header a{
         padding: 10px;
       border: 3px solid aliceblue;
       border-radius: 5px
@@ -121,13 +204,26 @@ a{
         padding-top: 10px;
         justify-content: center;
 
+    } */
+    header{
+        flex-direction: column;
+        padding: 20px;
+        min-height: 100px;
+        
     }
-    .title{
+    nav{
+        padding:10px;
+        margin-top: 10px;
+        justify-content: center;
+        align-items: center;
+        margin-right: 30px;
+    }
+    /* .title{
         display: flex;
         justify-content: center;
         align-items: center;
         
-    }
+    } */
     .btn{
         margin-left: 0;
     }
